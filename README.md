@@ -1,0 +1,71 @@
+# Hi 👋 I build production agentic systems
+
+I design and ship **AI agents that act safely in production** — and the
+vertical software they live inside. Three years building with Claude / Claude
+Code, with a focus on the hard part: letting autonomous systems *write* to real
+data without breaking things.
+
+🇫🇷 Based in **Paris, France** · 🗣️ FR / EN · available remote
+<!-- Fill in: name, @handle, email, links you want public -->
+
+---
+
+## What I work on
+
+**Safe agentic architecture.** I built an AI "chief of staff" embedded in a
+production ERP: a layered design with tiered governance (auto / confirm /
+human-approval), a human-in-the-loop gate on high-impact actions, and 20+
+validated write-actions across the system. The interesting engineering is in the
+*guardrails*, not the demo.
+
+**Agentic engineering at scale.** An agentic development harness that generates,
+gates and merges pull requests — with a 9-gate auto-merge pipeline, an
+independent-model review oracle, kill-switches and a re-evaluation path —
+**390+ merged PRs** to date (most human-reviewed; the auto-merge gate is armed).
+Backed by real **evals & observability**:
+golden datasets, trajectory evals, per-agent-call tracing, and context-recall
+metrics. Because "it works on my prompt" isn't production.
+
+**AI-native vertical ERP.** A multi-tenant SaaS ERP (**22 modules**,
+FastAPI · Supabase · Pydantic v2) serving agri-businesses, with a **deployed ERP
+chatbot passing a 20/20 golden-query suite**, internationalized across
+**23,000+ translation keys in 4 locales** — real deployment, real operations,
+real constraints.
+
+**Applied ML on small data.** Gradient-boosted models (CatBoost / XGBoost) and
+on-device inference (ONNX) for forecasting; a custom computer-vision pipeline
+(YOLO) for field measurement from phone photos.
+
+---
+
+## Open source
+
+| Repo | What it is |
+|---|---|
+| **agent-guardrails** | Tier 1/2/3 + HITL governance for agent write-actions — ~250 lines, zero deps |
+| **langgraph-hitl-agent** | Runnable LangGraph agent that pauses on high-impact actions via `interrupt()` |
+| **mcp-server-starter** | Real MCP server (FastMCP) with a destructive action guarded behind human confirmation |
+| **fastapi-supabase-multitenant-starter** | Multi-tenant SaaS skeleton with Postgres RLS isolation |
+| **claude-mcp-recipes** | Battle-tested MCP setups (Linear · Supabase · Sentry · Vercel) for a real dev loop |
+
+The core ERP business logic stays private — what's public is the reusable
+engineering underneath it.
+
+---
+
+## Stack
+
+`Python` · `FastAPI` · `Supabase / Postgres (RLS)` · `Pydantic v2` ·
+`Claude / Claude Code` · `MCP` · `LangGraph` · `RAG` · `CatBoost / XGBoost` ·
+`ONNX` · `YOLO` · `Linear` · `Vercel` · `Sentry`
+
+---
+
+## Open to
+
+Architecture audits for agentic systems · designing safe agent write-flows ·
+MCP server development · LangGraph / multi-agent systems with human oversight ·
+RAG pipelines · Python backend for SaaS / ERP. A francophone, on-the-ground
+understanding of African markets is a bonus where it's relevant.
+
+<!-- 📫 Reach me: {{email}} · {{linkedin}} · {{malt / upwork}} -->
