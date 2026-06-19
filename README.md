@@ -20,17 +20,18 @@ validated write-actions across the system. The interesting engineering is in the
 
 **Agentic engineering at scale.** An agentic development harness that generates,
 gates and merges pull requests — with a 9-gate auto-merge pipeline, an
-independent-model review oracle, kill-switches and a re-evaluation path —
-**390+ merged PRs** to date (most human-reviewed; the auto-merge gate is armed).
-Backed by real **evals & observability**:
-golden datasets, trajectory evals, per-agent-call tracing, and context-recall
-metrics. Because "it works on my prompt" isn't production.
+**independent-model review oracle**, a post-merge spot-audit, kill-switches and a
+re-evaluation path — **400+ merged PRs** to date (26 gate-auto-merged behind the 9
+gates; the rest human-reviewed). Backed by real **evals & observability**: golden
+datasets, trajectory evals, per-agent-call tracing, and context-recall metrics.
+Because "it works on my prompt" isn't production. *(The sanitized verdict core is
+public — see `harness-demo` below.)*
 
-**AI-native vertical ERP.** A multi-tenant SaaS ERP (**22 modules**,
+**AI-native vertical ERP.** A multi-tenant SaaS ERP (**21 modules**,
 FastAPI · Supabase · Pydantic v2) serving agri-businesses, with a **deployed ERP
 chatbot passing a 20/20 golden-query suite**, internationalized across
-**23,000+ translation keys in 4 locales** — real deployment, real operations,
-real constraints.
+**25,000+ translation keys in 4 locales**, over a **447-table schema with 446
+tables RLS-enabled** — real deployment, real operations, real constraints.
 
 **Applied ML on small data.** Gradient-boosted models (CatBoost / XGBoost) and
 on-device inference (ONNX) for forecasting; a custom computer-vision pipeline
@@ -42,11 +43,12 @@ on-device inference (ONNX) for forecasting; a custom computer-vision pipeline
 
 | Repo | What it is |
 |---|---|
+| **harness-demo** | The fail-closed verdict core that lets an agent merge to prod *safely* — 9 gates + independent-model oracle + post-merge audit, 48 fixtures, runnable demo, honest "how it can still fail" |
 | **agent-guardrails** | Tier 1/2/3 + HITL governance for agent write-actions — ~250 lines, zero deps |
 | **langgraph-hitl-agent** | Runnable LangGraph agent that pauses on high-impact actions via `interrupt()` |
 | **mcp-server-starter** | Real MCP server (FastMCP) with a destructive action guarded behind human confirmation |
 | **fastapi-supabase-multitenant-starter** | Multi-tenant SaaS skeleton with Postgres RLS isolation |
-| **claude-mcp-recipes** | Battle-tested MCP setups (Linear · Supabase · Sentry · Vercel) for a real dev loop |
+| **claude-mcp-recipes** | Battle-tested MCP setups (Linear · Supabase · Sentry · Vercel) for a real Claude Code dev loop |
 
 The core ERP business logic stays private — what's public is the reusable
 engineering underneath it.
