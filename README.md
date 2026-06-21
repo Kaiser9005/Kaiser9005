@@ -6,6 +6,10 @@ Code, with a focus on the hard part: letting autonomous systems *write* to real
 data without breaking things.
 
 🇫🇷 Based in **Paris, France** · 🗣️ FR / EN · available remote
+
+> ### 🛠️ I install AI-agent governance into your codebase.
+> Freelance & consulting — gates, guardrails, RLS hardening, evals.
+> **→ [What an install delivers + book a call](https://kaiser9005.github.io/agent-governance-install/)**
 <!-- Fill in: name, @handle, email, links you want public -->
 
 ---
@@ -70,4 +74,4 @@ MCP server development · LangGraph / multi-agent systems with human oversight �
 RAG pipelines · Python backend for SaaS / ERP. A francophone, on-the-ground
 understanding of African markets is a bonus where it's relevant.
 
-<!-- 📫 Reach me: {{email}} · {{linkedin}} · {{malt / upwork}} -->
+**→ [See what an "install" delivers and book a call](https://kaiser9005.github.io/agent-governance-install/)** · or DM me via [issues / discussions](https://github.com/Kaiser9005).
