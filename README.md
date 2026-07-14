@@ -10,7 +10,6 @@ data without breaking things.
 > ### 🛠️ I install AI-agent governance into your codebase.
 > Freelance & consulting — gates, guardrails, RLS hardening, evals.
 > **→ [What an install delivers + book a call](https://kaiser9005.github.io/agent-governance-install/)**
-<!-- Fill in: name, @handle, email, links you want public -->
 
 ---
 
@@ -25,7 +24,7 @@ validated write-actions across the system. The interesting engineering is in the
 **Agentic engineering at scale.** An agentic development harness that generates,
 gates and merges pull requests — with a 9-gate auto-merge pipeline, an
 **independent-model review oracle**, a post-merge spot-audit, kill-switches and a
-re-evaluation path — **400+ merged PRs** to date (26 gate-auto-merged behind the 9
+re-evaluation path — **500+ merged PRs** to date (26 gate-auto-merged behind the 9
 gates; the rest human-reviewed). Backed by real **evals & observability**: golden
 datasets, trajectory evals, per-agent-call tracing, and context-recall metrics.
 Because "it works on my prompt" isn't production. *(The sanitized verdict core is
